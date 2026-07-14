@@ -1,0 +1,12 @@
+[project]
+name = "heartlib-colab"
+version = "0.1.0"
+description = "Colab runner for HeartMuLa heartlib"
+requires-python = ">=3.10"
+dependencies = [
+  "huggingface_hub[cli]>=0.33.0",
+  "ipykernel>=6.29.0"
+]
+
+[tool.uv]
+package = false
