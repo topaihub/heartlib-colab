@@ -1,5 +1,7 @@
 # heartlib-colab
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/topaihub/heartlib-colab/blob/main/heartlib_colab.ipynb)
+
 这是一个给 Google Colab 准备的独立项目，用来快速跑通 `HeartMuLa/heartlib` 的音乐生成示例。
 
 ## 目录
