@@ -25,8 +25,7 @@
 1. 上传 `heartlib_colab.ipynb` 到 Colab。
 2. 在 Colab 里开启 GPU。
 3. 依次运行 notebook 的所有单元。
-4. notebook 会自动从 GitHub clone `topaihub/heartlib-colab`。
-5. 如果 `/content/heartlib-colab` 已经存在，第一格会强制同步到 `origin/main` 的最新代码。
+4. 第一格会删除 `/content/heartlib-colab` 旧目录并重新 clone 最新 GitHub 代码。
 
 最短路径：
 
@@ -34,7 +33,7 @@
 2. 选择 `Upload`
 3. 上传 `heartlib_colab.ipynb`
 4. 在 `Runtime -> Change runtime type -> Hardware accelerator` 里选择 `GPU`
-5. 运行 notebook，第一格会自动 clone 项目到 `/content/heartlib-colab`
+5. 运行 notebook，第一格会强制重拉最新项目到 `/content/heartlib-colab`
 
 ### 方式 2：手动执行
 
