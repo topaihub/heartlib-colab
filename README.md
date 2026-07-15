@@ -26,6 +26,7 @@
 2. 在 Colab 里开启 GPU。
 3. 依次运行 notebook 的所有单元。
 4. notebook 会自动从 GitHub clone `topaihub/heartlib-colab`。
+5. 如果 `/content/heartlib-colab` 已经存在，第一格会强制同步到 `origin/main` 的最新代码。
 
 最短路径：
 
