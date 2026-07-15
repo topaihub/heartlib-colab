@@ -35,6 +35,8 @@ uv pip install -e "$HEARTLIB_DIR"
 
 mkdir -p "$CKPT_DIR"
 
+HEARTCODEC_REPO="HeartMuLa/HeartCodec-oss-20260123"
+
 download_hf() {
   local repo_id="$1"
   local local_dir="$2"
@@ -93,18 +95,13 @@ download_heartcodec() {
     return 0
   fi
 
-  echo "Downloading HeartMuLa/HeartCodec-oss from Hugging Face -> $local_dir"
-  if download_hf "HeartMuLa/HeartCodec-oss" "$local_dir"; then
+  echo "Downloading $HEARTCODEC_REPO from Hugging Face -> $local_dir"
+  if download_hf "$HEARTCODEC_REPO" "$local_dir"; then
     return 0
   fi
 
-  echo "Hugging Face API download failed for HeartMuLa/HeartCodec-oss. Trying ModelScope..."
-  if download_modelscope "HeartMuLa/HeartCodec-oss" "$local_dir"; then
-    return 0
-  fi
-
-  echo "ModelScope download failed for HeartMuLa/HeartCodec-oss. Cloning Hugging Face model repo..."
-  clone_hf_model_repo "HeartMuLa/HeartCodec-oss" "$local_dir"
+  echo "Hugging Face API download failed for $HEARTCODEC_REPO. Cloning Hugging Face model repo..."
+  clone_hf_model_repo "$HEARTCODEC_REPO" "$local_dir"
 }
 
 download_with_fallback "HeartMuLa/HeartMuLaGen" "HeartMuLa/HeartMuLaGen" "$CKPT_DIR" "$CKPT_DIR/tokenizer.json"

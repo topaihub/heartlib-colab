@@ -51,6 +51,6 @@
 - 默认从 Hugging Face 下载：
   - `HeartMuLa/HeartMuLaGen`
   - `HeartMuLa/HeartMuLa-oss-3B`
-  - `HeartMuLa/HeartCodec-oss`
+  - `HeartMuLa/HeartCodec-oss-20260123`
 - 生成结果默认写到 `/content/output.mp3`。
 - Colab 免费 GPU 不稳定，建议先用较短音频测试，例如 `--max-audio-length-ms 30000`。
