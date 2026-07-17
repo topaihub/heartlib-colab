@@ -25,13 +25,17 @@ if [ ! -d "$ROOT_DIR/.git" ] && [ ! -f "$ROOT_DIR/pyproject.toml" ]; then
 fi
 
 cd "$ROOT_DIR"
-uv sync
 
+# heartlib 必须先 clone，因为 pyproject.toml 引用了它的路径
 if [ ! -d "$HEARTLIB_DIR/.git" ]; then
   git clone https://github.com/HeartMuLa/heartlib.git "$HEARTLIB_DIR"
 fi
 
-uv pip install -e "$HEARTLIB_DIR"
+# 删除旧 lockfile 避免冲突
+rm -f uv.lock
+
+# uv sync 一次性安装所有依赖（torch + numpy + heartlib）
+uv sync
 
 mkdir -p "$CKPT_DIR"
 

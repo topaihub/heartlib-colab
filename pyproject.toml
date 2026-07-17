@@ -4,10 +4,21 @@ version = "0.1.0"
 description = "Colab runner for HeartMuLa heartlib"
 requires-python = ">=3.10"
 dependencies = [
+  "torch>=2.0.0",
+  "numpy",
   "huggingface_hub>=0.33.0",
-  "ipykernel>=6.29.0",
-  "modelscope>=1.33.0"
+  "modelscope>=1.33.0",
+  "heartlib",
 ]
 
 [tool.uv]
 package = false
+
+[[tool.uv.index]]
+name = "pytorch-cu121"
+url = "https://download.pytorch.org/whl/cu121"
+explicit = true
+
+[tool.uv.sources]
+torch = { index = "pytorch-cu121" }
+heartlib = { path = "/content/heartlib", editable = true }
