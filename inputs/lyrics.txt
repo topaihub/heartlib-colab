@@ -1,13 +1,45 @@
 [Intro]
 
 [Verse]
-City lights are fading slow
-Morning finds a steady glow
-Footsteps echo through the rain
-Warmth returns again again
+君不见黄河之水天上来
+奔流到海不复回
+君不见高堂明镜悲白发
+朝如青丝暮成雪
+
+[Prechorus]
+人生得意须尽欢
+莫使金樽空对月
+天生我材必有用
+千金散尽还复来
 
 [Chorus]
-Hold the line and breathe it in
-Let the day quietly begin
-Hearts awake beneath the sky
-We rise and try we rise and try
+烹羊宰牛且为乐
+会须一饮三百杯
+岑夫子丹丘生
+将进酒杯莫停
+
+[Verse]
+与君歌一曲
+请君为我倾耳听
+钟鼓馔玉不足贵
+但愿长醉不愿醒
+
+[Chorus]
+古来圣贤皆寂寞
+惟有饮者留其名
+陈王昔时宴平乐
+斗酒十千恣欢谑
+
+[Bridge]
+主人何为言少钱
+径须沽取对君酌
+五花马千金裘
+
+[Chorus]
+呼儿将出换美酒
+与尔同销万古愁
+与尔同销万古愁
+
+[Outro]
+将进酒
+杯莫停
